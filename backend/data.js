@@ -59,7 +59,7 @@ const data = {
             countInStock: 44,
             brand: 'Nike',
             rating: 5,
-            numReviews: 182,
+            numReviews: 183,
             description: 'The first collaboration between Nike and Parra' 
         }
 
