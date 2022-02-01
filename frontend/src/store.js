@@ -4,7 +4,11 @@ import { cartReducer } from './reducers/cartReducers';
 import { productDetailsReducer, productListReducer } from './reducers/productReducers';
 
 //create redux store to use in react application => returns a list of products
-const initialstate = {};
+const initialstate = {
+    cart:{
+        cartItems: localStorage.getItem('cartItems')? JSON.parse(localStorage.getItem('cartItems')) : [],
+    }
+};
 const reducer = combineReducers({
     productList: productListReducer,
     productDetails: productDetailsReducer,
