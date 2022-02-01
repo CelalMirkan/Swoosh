@@ -2,7 +2,7 @@
   "name": "sn4u",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
@@ -10,9 +10,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "react": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CelalMirkan/Swoosh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CelalMirkan/Swoosh/issues"
+  },
+  "homepage": "https://github.com/CelalMirkan/Swoosh#readme"
 }
