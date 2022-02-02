@@ -30,7 +30,7 @@ body{
 
 header{
   grid-area: header;
-  background-color: #8fb0a4;
+  background-color: #085018;
 }
 main{
   grid-area: main;
@@ -38,7 +38,7 @@ main{
 }
 footer{
   grid-area: footer;
-  background-color: #8fb0a4;
+  background-color: #00965f;
   color: white;
 }
 /* Common */
@@ -84,12 +84,12 @@ button{
 
 }
 button {
-  background-color: lightgrey;
+  background-color: rgb(2, 87, 23);
   cursor: pointer;
 }
 
 button.primary{
-  background-color: gold;
+  background-color: rgb(26, 77, 3);
 }
 
 button.block{
@@ -175,7 +175,7 @@ img.large{
 /*Card*/
 
 .card{
-  border: 0.1rem ghostwhite;
+  border: 0.1rem rgb(4, 65, 27);
   background-color: honeydew;
   border-radius: 0.5rem;
   margin: 1rem;
