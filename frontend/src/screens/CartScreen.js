@@ -50,7 +50,7 @@ export default function CartScreen(props) {
                                                             <div>
                                                                 <select value={item.qty} onChange={e => dispatch(addToCart(item.product, Number(e.target.value)))}>
                                                                 {
-                                                                        //--> wie bekommt man den richtigen namen vom schuh?
+                                                            
                                                                         [...Array(item.countInStock).keys()].map( x => (
                                                                             <option key={x+1} value={x+1}>{x+1}</option>
                                                                         ))
