@@ -11,6 +11,7 @@ import { signout } from './actions/userActions';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
+import OrderHistoryScreen from './screens/OrderHistroyScreen';
 
 function App() {
 
@@ -47,7 +48,12 @@ function App() {
                                 </i>
                                 </Link>
                                 <ul className='dropdown-content'>
-                                    <Link to="#signout" onClick={signoutHandler}>Sign Out</Link>
+                                    <li>
+                                        <Link to="/orderhistory">Order History</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="#signout" onClick={signoutHandler}>Sign Out</Link>
+                                    </li>
                                 </ul>
                             </div>
                         ) : ( 
@@ -66,6 +72,7 @@ function App() {
                 <Route path="/payment" component={PaymentMethodScreen}></Route>
                 <Route path="/placeOrder" component={PlaceOrderScreen}></Route>
                 <Route path="/order/:id" component={OrderScreen}></Route>
+                <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
                 <Route path="/" component={HomeScreen} exact></Route>
             </main>
             <footer className="row center">All rights reserved
