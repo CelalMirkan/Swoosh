@@ -29,12 +29,12 @@ export default function ProductScreen(props) {
         <Link to="/">Back to Result</Link>
         <div className='row top'>            
             <div className='col-2'>
-                <img className='large' src={product.image} alt={product.model}></img>
+                <img className='large' src={product.image} alt={product.name}></img>
             </div>
             <div className='col-1'>
                 <ul>
                     <li>
-                        <h1>{product.model}</h1>
+                        <h1>{product.name}</h1>
                     </li>
                     <li>
                         <Rating
