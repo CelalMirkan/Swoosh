@@ -21,20 +21,19 @@ const data = {
     products: [
 
         {
-            _id: '1',
-            model: 'Air Jordan 1 Mid',
+            name: 'Air Jordan 1 Mid',
             category: 'High Top',
             image: '/images/p1.jpg',
             price: 159.99,
             countInStock: 20,
             brand: 'Nike',
-            rating: 4.5,
+            rating: 4.0,
             numReviews: 22,
             description: 'The new Air Jordan 1 Mid in Grey ' 
         },
         {
-            _id: '2',
-            model: 'Ultra Boost 1.0',
+
+            name: 'Ultra Boost 1.0',
             category: 'Running',
             image: '/images/p2.jpg',
             price: 179.99,
@@ -45,8 +44,8 @@ const data = {
             description: 'The Lifestyle running shoe' 
         },
         {
-            _id: '3',
-            model: 'Yeezy Boost 350 V2',
+
+            name: 'Yeezy Boost 350 V2',
             category: 'Low Top',
             image: '/images/p3.jpg',
             price: 220,
@@ -57,8 +56,8 @@ const data = {
             description: 'Kanyes newest creation' 
         },
         {
-            _id: '4',
-            model: 'Air Jordan 1 High OG Royal Blue',
+
+            name: 'Air Jordan 1 High OG Royal Blue',
             category: 'High Top',
             image: '/images/p4.jpg',
             price: 179.99,
@@ -69,8 +68,8 @@ const data = {
             description: 'The new Air Jordan 1 High in the sickest blue imaginable' 
         },
         {
-            _id: '5',
-            model: 'Nike x Parra Air Max 1',
+ 
+            name: 'Nike x Parra Air Max 1',
             category: 'low Top',
             image: '/images/p5.jpg',
             price: 129.99,
