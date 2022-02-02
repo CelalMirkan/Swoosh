@@ -30,7 +30,7 @@ body{
 
 header{
   grid-area: header;
-  background-color: #085018;
+  background-color: #23ff52;
 }
 main{
   grid-area: main;
@@ -38,7 +38,7 @@ main{
 }
 footer{
   grid-area: footer;
-  background-color: #00965f;
+  background-color: #38ff31;
   color: white;
 }
 /* Common */
@@ -84,12 +84,12 @@ button{
 
 }
 button {
-  background-color: rgb(2, 87, 23);
+  background-color: rgb(36, 255, 91);
   cursor: pointer;
 }
 
 button.primary{
-  background-color: rgb(26, 77, 3);
+  background-color: rgb(108, 255, 40);
 }
 
 button.block{
@@ -204,6 +204,9 @@ img.large{
 }
 
 /*Alert*/
+.loading {
+  display: block !important;
+}
 .success {
   color: green;
 }
@@ -227,6 +230,7 @@ img.large{
   color: red;
   background-color: #ffe0e0e0;
 }
+
 
 /*Form*/
 
