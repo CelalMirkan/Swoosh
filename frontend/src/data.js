@@ -61,6 +61,19 @@ const data = {
             rating: 5,
             numReviews: 182,
             description: 'The first collaboration between Nike and Parra' 
+        },
+
+        {
+            _id: '6',
+            name: 'Air Jordan 4 University Blue',
+            category: 'High Top',
+            image: '/images/p6.jpg',
+            price: 370.00,
+            countInStock: 44,
+            brand: 'Nike',
+            rating: 5,
+            numReviews: 1212,
+            description: 'Classic Air Jordan in the colorway of UNC' 
         }
 
     ]
