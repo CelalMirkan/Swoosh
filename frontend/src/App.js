@@ -12,6 +12,10 @@ import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import OrderHistoryScreen from './screens/OrderHistroyScreen';
+import AdminRoute from './components/AdminRoute';
+import ProductListScreen from './screens/ProductListScreen';
+import OrderListScreen from './screens/OrderListScreen';
+import UserListScreen from './screens/UserListScreen';
 
 function App() {
 
@@ -60,7 +64,24 @@ function App() {
                         <Link to="/signin">Sign In</Link>
                         )
                     }
-                   
+                   {userInfo && userInfo.isAdmin && (
+              <div className="dropdown">
+                <Link to="#admin">
+                  Admin <i className="fa fa-caret-down"></i>
+                </Link>
+                <ul className="dropdown-content">
+                  <li>
+                    <Link to="/productlist">Products</Link>
+                  </li>
+                  <li>
+                    <Link to="/orderlist">Orders</Link>
+                  </li>
+                  <li>
+                    <Link to="/userlist">Users</Link>
+                  </li>
+                </ul>
+              </div>
+            )}
                 </div>
             </header>
             <main>
@@ -73,6 +94,9 @@ function App() {
                 <Route path="/placeOrder" component={PlaceOrderScreen}></Route>
                 <Route path="/order/:id" component={OrderScreen}></Route>
                 <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
+                <AdminRoute path="/productlist" component={ProductListScreen}></AdminRoute>
+                <AdminRoute path="/orderlist" component={OrderListScreen}></AdminRoute>
+                <AdminRoute path="/userlist" component={UserListScreen}></AdminRoute>
                 <Route path="/" component={HomeScreen} exact></Route>
             </main>
             <footer className="row center">All rights reserved

@@ -3,7 +3,7 @@ import express from "express";
 import expressAsyncHandler from "express-async-handler";
 import data from "../data.js";
 import User from "../models/userModel.js";
-import { generateToken } from "../utils.js";
+import { generateToken, isAdmin, isAuth } from '../utils.js';
 
 const userRouter = express.Router();
 
@@ -48,5 +48,16 @@ userRouter.post('/register', expressAsyncHandler(async(req, res) => {
         token: generateToken(createdUser),
     });
 }));
+
+userRouter.get(
+    '/',
+    isAuth,
+    isAdmin,
+    expressAsyncHandler(async (req, res) => {
+      const users = await User.find({});
+      res.send(users);
+    })
+  );
+  
 
 export default userRouter;
