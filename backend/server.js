@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
 import orderRouter from './routers/orderRouter.js';
+import User from './models/userModel.js';
+import Order from './models/orderModel.js';
 
 dotenv.config();
 const app = express();
@@ -23,6 +25,19 @@ app.use('/api/orders', orderRouter);
 app.get('/', (req, res) => {
     res.send('Server is ready');
 });
+
+app.get('/api/b2b/customers', async(req, res) => {
+    const cust = await User.find({});
+    return res.send(cust);
+});
+
+app.get('/api/b2b/orders', async(req, res) => {
+    const customer = req.params.id;
+    console.log(req.params.id);
+
+    const oders = await Order.find({user:customer})
+    return res.send(oders);
+})
 
 app.use((err, req, res, next) => {
     res.status(500).send({message: err.message});
