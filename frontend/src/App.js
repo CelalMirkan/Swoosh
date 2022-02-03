@@ -16,6 +16,8 @@ import AdminRoute from './components/AdminRoute';
 import ProductListScreen from './screens/ProductListScreen';
 import OrderListScreen from './screens/OrderListScreen';
 import UserListScreen from './screens/UserListScreen';
+import SearchBox from './components/SearchBox';
+import SearchScreen from './screens/SearchScreen';
 
 function App() {
 
@@ -37,6 +39,12 @@ function App() {
                 <div>
                     <Link className="brand" to="/">SwooshTrade</Link>
                 </div>
+                <div>
+            <Route render={({ history }) => (
+                <SearchBox history={history}></SearchBox>
+              )}
+            ></Route>
+          </div>
                 <div>
                     <Link to="/cart">Cart
                     {cartItems.length > 0 && (
@@ -97,6 +105,7 @@ function App() {
                 <AdminRoute path="/productlist" component={ProductListScreen}></AdminRoute>
                 <AdminRoute path="/orderlist" component={OrderListScreen}></AdminRoute>
                 <AdminRoute path="/userlist" component={UserListScreen}></AdminRoute>
+                <Route path="/search/name/:name?" component={SearchScreen} exact></Route>
                 <Route path="/" component={HomeScreen} exact></Route>
             </main>
             <footer className="row center">All rights reserved
