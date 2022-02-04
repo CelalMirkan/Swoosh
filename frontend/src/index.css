@@ -30,7 +30,7 @@ body{
 
 header{
   grid-area: header;
-  background-color: #23ff52;
+  background-color:	#00bfff;
 }
 main{
   grid-area: main;
@@ -38,7 +38,7 @@ main{
 }
 footer{
   grid-area: footer;
-  background-color: #38ff31;
+  background-color:	#00bfff;
   color: white;
 }
 /* Common */
@@ -84,12 +84,12 @@ button{
 
 }
 button {
-  background-color: rgb(36, 255, 91);
+  background-color: #00bfff(36, 255, 91);
   cursor: pointer;
 }
 
 button.primary{
-  background-color: rgb(108, 255, 40);
+  background-color:	#00bfff(108, 255, 40);
 }
 
 button.block{
@@ -179,8 +179,8 @@ img.large{
 /*Card*/
 
 .card{
-  border: 0.1rem rgb(4, 65, 27);
-  background-color: honeydew;
+  border: 0.1rem 	#00bfff(4, 65, 27);
+  background-color: #b0e0e6;
   border-radius: 0.5rem;
   margin: 1rem;
 }
@@ -268,7 +268,7 @@ img.large{
   min-width: 12rem;
   padding: 1rem;
   z-index: 1;
-  background-color: honeydew;
+  background-color: 	#00bfff;
   margin: 0;
   margin-top: 0.4rem;
   border-radius: 0.5rem;
@@ -288,8 +288,8 @@ img.large{
 }
 
 .checkout-steps > div.active {
-  border-top-color: #f02020;
-  color: #f02020;
+  border-top-color: 	#4682b4			;
+  color: 	#4682b4			;
   font-weight: bold;
 }
 
